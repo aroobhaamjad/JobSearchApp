@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black1">
+
+
+    <ImageView
+        android:id="@+id/home_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Home"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/home_menu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/home_menu"
+        app:layout_constraintTop_toBottomOf="@+id/home_menu" />
+
+    <ImageButton
+        android:id="@+id/inventory_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black1"
+        app:layout_constraintStart_toEndOf="@+id/home_menu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/inventory" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Inventory"
+        android:textColor="@color/gray"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/inventory_menu"
+        app:layout_constraintStart_toStartOf="@+id/inventory_menu"
+        app:layout_constraintTop_toBottomOf="@+id/inventory_menu"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/expenses_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black1"
+        app:layout_constraintStart_toEndOf="@+id/inventory_menu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/expenses_grey" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Expenses"
+        android:textColor="@color/gray"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/expenses_menu"
+        app:layout_constraintStart_toStartOf="@+id/expenses_menu"
+        app:layout_constraintTop_toBottomOf="@+id/expenses_menu" />
+
+    <ImageButton
+        android:id="@+id/savings_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black1"
+        app:layout_constraintStart_toEndOf="@+id/expenses_menu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/savings_grey" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Savings"
+        android:textColor="@color/gray"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/savings_menu"
+        app:layout_constraintStart_toStartOf="@+id/savings_menu"
+        app:layout_constraintTop_toBottomOf="@+id/savings_menu"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/calender_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black1"
+        app:layout_constraintStart_toEndOf="@+id/savings_menu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/calender_grey" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Calender"
+        android:textColor="@color/gray"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/calender_menu"
+        app:layout_constraintStart_toStartOf="@+id/calender_menu"
+        app:layout_constraintTop_toBottomOf="@+id/calender_menu" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Graph"
+        android:textColor="@color/gray"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/graph_menu"
+        app:layout_constraintStart_toStartOf="@+id/graph_menu"
+        app:layout_constraintTop_toBottomOf="@+id/graph_menu" />
+
+    <ImageButton
+        android:id="@+id/graph_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black1"
+        app:layout_constraintStart_toEndOf="@+id/calender_menu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/graph_grey" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/darker_gray" /> <!-- Set the desired color -->
+    <size android:width="410dp" android:height="0.75dp" /> <!-- Set the desired width and height -->
+</shape>

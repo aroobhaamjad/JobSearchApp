@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uit.GenderProportion">
+
+    <TextView
+        android:id="@+id/tvNextBtnGenderProportion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/next"
+        android:textColor="@color/turquoise"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvGenderProportion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Company Account"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ivGenderProportion"
+        app:layout_constraintTop_toBottomOf="@+id/ivBackBtnGenderProportion" />
+
+    <TextView
+        android:id="@+id/tvGenderProportionWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Demographic Information"
+        android:textColor="@color/turquoise"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ivGenderProportion"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenderProportion" />
+
+    <ImageView
+        android:id="@+id/ivScrollBarGenderProportion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/ivGenderProportion"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenderProportionWebsite"
+        app:srcCompat="@drawable/scroll_5" />
+
+    <TextView
+        android:id="@+id/tvGenderProportion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Gender Proportion"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivScrollBarGenderProportion" />
+
+    <TextView
+        android:id="@+id/tvGenderProportion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="What are the proportion of male, female, and non-binary of company"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenderProportion2" />
+
+    <ImageView
+        android:id="@+id/ivBackBtnGenderProportion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_btn" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivGenderProportion"
+        android:layout_width="70dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBackBtnGenderProportion"
+        app:srcCompat="@drawable/upload_picture" />
+
+    <hearsilent.discreteslider.DiscreteSlider
+        android:id="@+id/sbMaleSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingTop="50dp"
+        app:ds_count="101"
+        app:ds_inactiveTrackColor="@color/gray"
+        app:ds_maxProgress="101"
+        app:ds_minProgress="1"
+        app:ds_progressOffset="0"
+        app:ds_thumbColor="@color/green"
+        app:ds_thumbRadius="10dp"
+        app:ds_trackColor="@color/green"
+        app:ds_trackWidth="10dp"
+        app:ds_valueLabelDuration="2500"
+        app:ds_valueLabelGravity="top"
+        app:ds_valueLabelMode="showOnPressHold|showOnProgressChange"
+        app:ds_valueLabelTextColor="@color/white"
+        app:ds_valueLabelTextSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+
+    <hearsilent.discreteslider.DiscreteSlider
+        android:id="@+id/sbFemaleSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingTop="50dp"
+        app:ds_count="101"
+        app:ds_inactiveTrackColor="@color/gray"
+        app:ds_maxProgress="101"
+        app:ds_minProgress="1"
+        app:ds_progressOffset="0"
+        app:ds_thumbColor="@color/green"
+        app:ds_thumbRadius="10dp"
+        app:ds_trackColor="@color/green"
+        app:ds_trackWidth="10dp"
+        app:ds_valueLabelDuration="2500"
+        app:ds_valueLabelGravity="top"
+        app:ds_valueLabelMode="showOnPressHold|showOnProgressChange"
+        app:ds_valueLabelTextColor="@color/white"
+        app:ds_valueLabelTextSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+    <hearsilent.discreteslider.DiscreteSlider
+        android:id="@+id/sbNonBinarySlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingTop="50dp"
+        app:ds_count="101"
+        app:ds_inactiveTrackColor="@color/gray"
+        app:ds_maxProgress="101"
+        app:ds_minProgress="1"
+        app:ds_progressOffset="0"
+        app:ds_thumbColor="@color/green"
+        app:ds_thumbRadius="10dp"
+        app:ds_trackColor="@color/green"
+        app:ds_trackWidth="10dp"
+        app:ds_valueLabelDuration="2500"
+        app:ds_valueLabelGravity="top"
+        app:ds_valueLabelMode="showOnPressHold|showOnProgressChange"
+        app:ds_valueLabelTextColor="@color/white"
+        app:ds_valueLabelTextSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView74" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/men"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenderProportion3" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/women"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sbMaleSlider" />
+
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/nonbinary"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sbFemaleSlider" />
+
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not sure"
+        android:textColor="#19999A"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sbNonBinarySlider" />
+
+    <TextView
+        android:id="@+id/tvSumProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/yellow"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="0%"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenderProportion3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uit.Connect"
+    android:background="@color/turquoise">
+
+    <ImageView
+        android:id="@+id/ivBigCircleConnect"
+        android:layout_width="242dp"
+        android:layout_height="226dp"
+        android:layout_marginStart="-140dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/ivSkipConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="-30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/semi_circle" />
+
+    <ImageView
+        android:id="@+id/ivYellowLinedCircleConnect"
+        android:layout_width="259dp"
+        android:layout_height="253dp"
+        android:layout_marginEnd="-180dp"
+        app:layout_constraintBottom_toTopOf="@+id/llNextBtnConnect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/lined_circle_mustard" />
+
+    <LinearLayout
+        android:id="@+id/llNextBtnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/mustard"
+        android:orientation="horizontal"
+        android:paddingLeft="32dp"
+        android:paddingTop="14dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView81Connect">
+
+        <TextView
+            android:id="@+id/tvNextConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Next   "
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivArrowConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/arrow" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivYellowSemiCircle2Connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-40dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBigCircleConnect"
+        app:srcCompat="@drawable/semicircle_2" />
+
+    <ImageView
+        android:id="@+id/ivScrollBarConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView81Connect"
+        app:srcCompat="@drawable/scroll_bar_3" />
+
+    <TextView
+        android:id="@+id/tvConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="38dp"
+        android:text="Connect"
+        android:textColor="@color/mustard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivYellowSemiCircle2Connect" />
+
+    <TextView
+        android:id="@+id/textView81Connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:paddingLeft="16dp"
+        android:text="Connect directly with qualified applicants whose background and experience match your needs."
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvConnect" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-50dp"
+        android:layout_marginTop="-40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lined_circle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

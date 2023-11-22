@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="next">Next</string>
+    <string name="men">Men</string>
+    <string name="women">Women</string>
+    <string name="nonbinary">Non-Binary</string>
+</resources>
